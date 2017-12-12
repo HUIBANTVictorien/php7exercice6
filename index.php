@@ -6,13 +6,12 @@
   </head>
   <body>
     <?php
-
-    $text = 'On y arrive presque';
-      for ($number = 1; $number < 15; $number++) {
+    $text = 'C\'est presque bon';
+      for ($number = 20; $number > 0; $number--) {
         echo $text.'<br/>';
       }
-      if ($number == 15) {
-        echo ('On y est arrivé !');
+      if ($number == 0) {
+        echo ('C\'est bon !');
       }
      ?>
   </body>
