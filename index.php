@@ -1,10 +1,19 @@
-<?php
-$monAge = 25;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercice 6 partie 3 php</title>
+  </head>
+  <body>
+    <?php
 
-if ($monAge < 18) {
-  echo ('Tu n\'es pas mineur');
-}
-else {
-  echo ('Tu es majeur');
-}
-?>
+    $text = 'On y arrive presque';
+      for ($number = 1; $number < 15; $number++) {
+        echo $text.'<br/>';
+      }
+      if ($number == 15) {
+        echo ('On y est arrivé !');
+      }
+     ?>
+  </body>
+</html>
