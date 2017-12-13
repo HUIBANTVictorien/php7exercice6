@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>exercice 6 partie 3 php</title>
-  </head>
-  <body>
-    <?php
-    $text = 'C\'est presque bon';
-      for ($number = 20; $number > 0; $number--) {
-        echo $text.'<br/>';
-      }
-      if ($number == 0) {
-        echo ('C\'est bon !');
-      }
-     ?>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>exercice 5 partie 7 php</title>
+</head>
+<body>
+  <p><?php
+  if (isset($_POST['civility']) && ($_POST['lastname']) && ($_POST['firstname'])) {
+    echo 'Bonjour ' . $_POST['civility'] . ' ' . $_POST['lastname'] . ' ' . $_POST['firstname'];
+  } else {?>
+    <form class="form" action="index.php" method="post">
+    <select class="civility" name="civility">
+      <option value="Monsieur" name="Monsieur">Monsieur</option>
+      <option value="Madame" name="Madame">Madame</option>
+    </select>
+    <input type="lastname" name="lastname" placeholder="Nom">
+    <input type="firstname" name="firstname" placeholder="Prénom">
+    <button type="submit" name="validate">Valider</button>
+  </form>
+  <?php}?>
+</p>
+</body>
 </html>
